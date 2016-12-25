@@ -1,0 +1,15 @@
+{
+  "name": "pdf2speech",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yusuke Yasuda",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.7.19",
+    "pdfjs-dist": "^1.6.414"
+  }
+}
