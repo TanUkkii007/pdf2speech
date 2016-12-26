@@ -8,13 +8,15 @@ AWS.config.update({region: 'us-east-1'});
 
 const PdfTextContentStream = require('./pdf-stream').PdfTextContentStream;
 const PollySpeechSynthesisStream = require('./aws-polly').PollySpeechSynthesisStream;
+const LineConcat = require('./lineconcat').LineConcat;
 
 const pdfPath = process.argv[2];
 const data = new Uint8Array(fs.readFileSync(pdfPath));
 
-const pdfText = new PdfTextContentStream({source: data, startPage: 7, stopPage: 7});
+const pdfText = new PdfTextContentStream({source: data, startPage: 7, stopPage: 9});
 
-//pdfText.pipe(process.stdout);
+//pdfText.pipe(new LineConcat()).pipe(process.stdout);
 pdfText
+  .pipe(new LineConcat())
   .pipe(new PollySpeechSynthesisStream({voiceId: 'Joanna'}))
   .pipe(fs.createWriteStream('out.mp3'));

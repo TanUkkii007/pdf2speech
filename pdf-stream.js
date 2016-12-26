@@ -4,7 +4,7 @@ require('pdfjs-dist');
 
 class PdfTextContentStream extends Readable {
   constructor(options) {
-    super();
+    super({objectMode: true});
     this._initialized = false;
     this.source = options.source;
     this._currentPage = options.startPage || 1;
@@ -37,14 +37,11 @@ class PdfTextContentStream extends Readable {
     } else {
       pdfDocument.getPage(this._currentPage).then((page) => {
         return page.getTextContent().then((content) => {
-          const strings = content.items.map((item) => {
-            return item.str;
-          });
           this._currentPage++;
-          if (strings.length === 0) {
+          if (content.items.length === 0) {
             this._readPage();
           } else {
-            this.push(strings.join(' '));
+            this.push(content);
           }
         });
       }).catch((error) => {
