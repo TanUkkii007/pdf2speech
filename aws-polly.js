@@ -36,10 +36,9 @@ class PollySpeechSynthesisStream extends Transform {
     synthesizeSpeech(data, this.voiceId).then((result) => {
       if (result.RequestCharacters != requestCharacters) {
         console.warn(`Only ${result.RequestCharacters} characters were synthesized. Excepted ${requestCharacters}.`);
-      } else {
-        this.push(result.AudioStream);
-        callback();
       }
+      this.push(result.AudioStream);
+      callback();
     }).catch((error) => {
       callback(error);
     });
