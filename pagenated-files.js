@@ -10,14 +10,11 @@ class PagenatedFiles extends Writable {
   }
 
   _write(chunk, encoding, callback) {
-    console.log(`${this.prefix}-${this._currentPage}.mp3`);
     fs.open(`${this.prefix}-${this._currentPage}.mp3`, 'w', (error, fd) => {
-      console.log(error, fd);
       if (error) {
         callback(error);
       } else {
         fs.write(fd, chunk, (error, written, buffer) => {
-          console.log(error, written);
           if (error) {
             callback(error);
           } else {

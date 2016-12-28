@@ -31,7 +31,6 @@ class PollySpeechSynthesisStream extends Transform {
     if (Buffer.isBuffer(data)) {
       data = data.toString();
     }
-    console.log(data);
     const requestCharacters = data.length;
     synthesizeSpeech(data, this.voiceId).then((result) => {
       if (result.RequestCharacters != requestCharacters) {
