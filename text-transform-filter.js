@@ -37,7 +37,6 @@ class TextTransformFilter extends Transform {
         return transform[comparator.index] <= comparator.value;
         break;
       case '>':
-      console.log(`${transform[comparator.index]} > ${comparator.value} = ${transform[comparator.index] > comparator.value}`);
         return transform[comparator.index] > comparator.value;
         break;
       case '>=':

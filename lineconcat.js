@@ -11,7 +11,7 @@ class LineConcat extends Transform {
     const strings = data.items.map((item) => {
       return item.str;
     });
-    console.log(strings.join(this.separator));
+    //console.log(strings.join(this.separator));
     this.push(strings.join(this.separator));
     callback();
   }
