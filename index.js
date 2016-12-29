@@ -20,14 +20,17 @@ const data = new Uint8Array(fs.readFileSync(pdfPath));
 
 const pdfText = new PdfTextContentStream({source: data, startPage: 7, stopPage: 10});
 
+// pdfText
+//   .pipe(new TextTransformFilter({filterOps: [{index: 5, op: '>', value: 43}]}))
+//   .pipe(new PageBoundarySentencesConcat())
+//   .pipe(new Hyphenation())
+//   .pipe(new LineConcat())
+//   .pipe(process.stdout);
 pdfText
-  .pipe(new TextTransformFilter({filterOps: [{index: 5, op: '>', value: 43}]}))
+.pipe(new TextTransformFilter({filterOps: [{index: 5, op: '>', value: 43}]}))
   .pipe(new PageBoundarySentencesConcat())
   .pipe(new Hyphenation())
+  .pipe(new WordCountLimit({limit: 1500}))
   .pipe(new LineConcat())
-  .pipe(process.stdout);
-// pdfText
-//   .pipe(new WordCountLimit({limit: 1500}))
-//   .pipe(new LineConcat())
-//   .pipe(new PollySpeechSynthesisStream({voiceId: 'Joanna'}))
-//   .pipe(new PagenatedFiles({prefix: 'out'}));
+  .pipe(new PollySpeechSynthesisStream({voiceId: 'Joanna'}))
+  .pipe(new PagenatedFiles({prefix: 'out'}));
