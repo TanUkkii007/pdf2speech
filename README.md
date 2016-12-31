@@ -42,7 +42,7 @@ cat out-*.mp3 > combined.mp3
 ```
 
 # ToDo
-- I think pdf2speech cannot be a general CLI tool. There are tons of different format of PDFs so programming is needed. Instead of provide general CLI, examples for specific books can be helpful.
+- I think pdf2speech cannot be a general CLI tool. There are tons of different formats of PDFs so programming is needed. Instead of providing general CLI, examples for specific books can be helpful.
 - publish pdf-to-audio conversion process streams as library
 - API refinement
 - CMAP support
