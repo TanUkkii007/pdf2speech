@@ -19,7 +19,7 @@ const PageBoundarySentencesConcat = require('./page-boundary-sentences-concat').
 const pdfPath = process.argv[2];
 const data = new Uint8Array(fs.readFileSync(pdfPath));
 
-const pdfText = new PdfTextContentStream({source: data, startPage: 7, stopPage: 8});
+const pdfText = new PdfTextContentStream({source: data, startPage: 7, stopPage: 54});
 
 function insertPredicate(item) {
   return item.fontName === 'g_d0_f1' || item.fontName === 'g_d0_f4';
