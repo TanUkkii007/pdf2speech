@@ -7,7 +7,7 @@ It allows you to read PDF books while you are walking.
 
 # Status
 
-Currently I am testing to convert [O'reilly](http://www.oreilly.com/) books to audio. `example.js` successfully converted "Database Reliability Engineering" book. I guess formats of the animal books of O'reilly are generally same so it works for the other books as well.
+Currently I am testing to convert [O'reilly](http://www.oreilly.com/) books to audio. scripts in `example` directory successfully converted some O'reilly books. I guess formats of the animal books of O'reilly are generally same so it generally works for the other books as well.
 
 # Requirements
 
