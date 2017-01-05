@@ -9,6 +9,7 @@ class PdfTextContentStream extends Readable {
     this.source = options.source;
     this._currentPage = options.startPage || 1;
     this.stopPage = options.stopPage;
+    this.stopLine = options.stopLine;
   }
 
   _read(size) {
@@ -40,6 +41,12 @@ class PdfTextContentStream extends Readable {
           this._currentPage++;
           if (content.items.length === 0) {
             this._readPage();
+          } else if (this._currentPage - 1 === this.stopPage && this.stopLine) {
+            const newItems = content.items.filter((line, index) => {
+              return index + 1 <= this.stopLine;
+            });
+            const copy = Object.assign({}, content, {items: newItems});
+            this.push(copy);
           } else {
             this.push(content);
           }
