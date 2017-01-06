@@ -20,12 +20,12 @@ const pdfPath = process.argv[2];
 const data = new Uint8Array(fs.readFileSync(pdfPath));
 
 const chapters = [
-  {startPage: 25, stopPage: 47},
+  {startPage: 25, stopPage: 47, stopLine: 17},
   {startPage: 51, stopPage: 87},
-  {startPage: 93, stopPage: 128},
-  {startPage: 135, stopPage: 164},
-  {startPage: 169, stopPage: 215},
-  {startPage: 219, stopPage: 237},
+  {startPage: 93, stopPage: 128, stopLine: 29},
+  {startPage: 135, stopPage: 164, stopLine: 17},
+  {startPage: 169, stopPage: 215, stopLine: 4},
+  {startPage: 219, stopPage: 237, stopLine: 39},
   {startPage: 241, stopPage: 288},
   {startPage: 293, stopPage: 332},
   {startPage: 339, stopPage: 393},
@@ -39,7 +39,7 @@ function insertPredicate(item) {
 }
 
 chapters.forEach((chapter, index) => {
-  const pdfText = new PdfTextContentStream({source: data, startPage: chapter.startPage, stopPage: chapter.stopPage});
+  const pdfText = new PdfTextContentStream({source: data, startPage: chapter.startPage, stopPage: chapter.stopPage, stopLine: chapter.stopLine});
   pdfText
     .pipe(new TextTransformFilter({filterOps: [{index: 5, op: '>', value: 43}]}))
     .pipe(new PageBoundarySentencesConcat())
