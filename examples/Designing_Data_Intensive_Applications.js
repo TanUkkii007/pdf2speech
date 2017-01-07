@@ -26,12 +26,12 @@ const chapters = [
   {startPage: 135, stopPage: 164, stopLine: 17},
   {startPage: 169, stopPage: 215, stopLine: 4},
   {startPage: 219, stopPage: 237, stopLine: 39},
-  {startPage: 241, stopPage: 288},
-  {startPage: 293, stopPage: 332},
+  {startPage: 241, stopPage: 288, stopLine: 10},
+  {startPage: 293, stopPage: 332, stopLine: 13},
   {startPage: 339, stopPage: 393},
   {startPage: 403, stopPage: 446},
-  {startPage: 453, stopPage: 495},
-  {startPage: 501, stopPage: 555}
+  {startPage: 453, stopPage: 495, stopLine: 6},
+  {startPage: 501, stopPage: 555, stopLine: 15}
 ];
 
 function insertPredicate(item) {
