@@ -6,15 +6,15 @@ require('pdfjs-dist');
 
 AWS.config.update({region: 'us-east-1'});
 
-const PdfTextContentStream = require('./pdf-stream').PdfTextContentStream;
-const PollySpeechSynthesisStream = require('./aws-polly').PollySpeechSynthesisStream;
-const LineConcat = require('./lineconcat').LineConcat;
-const PagenatedFiles = require('./pagenated-files').PagenatedFiles;
-const WordCountLimit = require('./word-count-limit').WordCountLimit;
-const TextTransformFilter = require('./text-transform-filter').TextTransformFilter;
-const Hyphenation = require('./hyphenation').Hyphenation;
-const InsertAfter = require('./insert-after').InsertAfter;
-const PageBoundarySentencesConcat = require('./page-boundary-sentences-concat').PageBoundarySentencesConcat;
+const PdfTextContentStream = require('../pdf-stream').PdfTextContentStream;
+const PollySpeechSynthesisStream = require('../aws-polly').PollySpeechSynthesisStream;
+const LineConcat = require('../lineconcat').LineConcat;
+const PagenatedFiles = require('../pagenated-files').PagenatedFiles;
+const WordCountLimit = require('../word-count-limit').WordCountLimit;
+const TextTransformFilter = require('../text-transform-filter').TextTransformFilter;
+const Hyphenation = require('../hyphenation').Hyphenation;
+const InsertAfter = require('../insert-after').InsertAfter;
+const PageBoundarySentencesConcat = require('../page-boundary-sentences-concat').PageBoundarySentencesConcat;
 
 const pdfPath = process.argv[2];
 const data = new Uint8Array(fs.readFileSync(pdfPath));
