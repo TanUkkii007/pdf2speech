@@ -38,6 +38,7 @@ class PdfTextContentStream extends Readable {
     } else {
       pdfDocument.getPage(this._currentPage).then((page) => {
         return page.getTextContent().then((content) => {
+          const baseContent = Object.assign({pageNumber: this._currentPage}, content);
           this._currentPage++;
           if (content.items.length === 0) {
             this._readPage();
@@ -45,10 +46,10 @@ class PdfTextContentStream extends Readable {
             const newItems = content.items.filter((line, index) => {
               return index + 1 <= this.stopLine;
             });
-            const copy = Object.assign({}, content, {items: newItems});
+            const copy = Object.assign(baseContent, {items: newItems});
             this.push(copy);
           } else {
-            this.push(content);
+            this.push(baseContent, content);
           }
         });
       }).catch((error) => {

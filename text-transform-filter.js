@@ -21,7 +21,7 @@ class TextTransformFilter extends Transform {
           return this.compare(transform, op);
         });
       });
-      this.push({items: filteredItems});
+      this.push(Object.assign({}, data, {items: filteredItems}));
     } else {
       this.push(data);
     }
