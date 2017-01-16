@@ -41,6 +41,46 @@ const replaceOption = {
     {from: 'totheAdvanced', to: 'to the Advanced'},
     {from: 'For instance, the processe', to: 'For instance, the processe-'},
     {from: 'smayneedtoagreeonwhethera', to: 's may need to agree on whether a'}
+  ],
+  24: [
+    {from: 'Unless this reliability property is given fo', to: 'Unless this reliability property is given for'},
+    {from: 'rfreebytheunderlyi', to: 'free by the underlyi-'}
+  ],
+  25: [
+    {from: 'aconsistentviewoftherunningtransactionsandcanmakeconsistentdecisionson', to: 'a consistent view of the running transactions and can make consistent decisions on'}
+  ],
+  26: [
+    {from: 'Alarge-capacitystoragesystemdistributesdataovermany', to: 'A large-capacity storage system distributes data over many'},
+    {from: 'whichisapowerful', to: 'which is a powerful'}
+  ],
+  27: [
+    {from: ':theprocessesneedtoagreehereonthesequenceofmessagesthey', to: ': the processes need to agree here on the sequence of messages they'},
+    {from: 'Faced with performance constraints, th', to: 'Faced with performance constraints, th-'},
+    {from: 'eapplicationdesignermaybedrivento', to: 'e application designer may be driven to'},
+    {from: 'awell-definedinterface.Theapproachcanbefurthersupportedbyasuperficial', to: 'a well-defined interface. The approach can be further supported by a superficial'},
+    {from: 'lem. This is particularly true because of th', to: 'lem. This is particularly true because of th-'},
+    {from: 'evarietyofdistributedsystemmodels.', to: 'e variety of distributed system models.'}
+  ],
+  28: [
+    {from: 'anewonewithpedagogicalpurposesinmind.', to: 'a new one with pedagogical purposes in mind.'},
+    {from: 'ASimpleExample.', to: 'A Simple Example.'}
+  ],
+  29: [
+    {from: ',asillustratedinFig.', to: ', as illustratedin Fig.'},
+    {from: '.Agivenabstractionistypicallymaterializedby', to: '. A given abstraction is typically materialized by'},
+    {from: 'asetofcomponents,eachrunningataprocess.', to: 'a set of components, each running at a process.'},
+    {from: '.Eventsaredenotedby', to: '. Events are denoted by'},
+    {from: '.Oftenanevent', to: '. Often an event'},
+    {from: ',we,therefore,usuallywrite:', to: ', we, therefore, usually write:'},
+    {from: ',whichdescribestheevent,followedbypseudo', to: ', which describes the event, followed by pseudo'}
+  ],
+  30: [
+    {from: 'is correct (unless the destination modul', to: 'is correct (unless the destination modul-'},
+    {from: 'eexplicitlyfilterstheevent;seethe', to: 'e explicitly filters the event; see the such that'},
+    {from: 'must be ready to handle both membershi', to: 'must be ready to handle both membershi-'},
+    {from: 'pchangesandreceptionofmessagesat', to: 'changes and reception of messages at'},
+    {from: 'when some condition in the implementatio', to: 'when some condition in the implementatio-'},
+    {from: 'nbecomestrue,butdonotrespondtoan', to: 'n becomes true, but do not respond to an'}
   ]
 };
 
