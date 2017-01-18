@@ -81,6 +81,25 @@ const replaceOption = {
     {from: 'pchangesandreceptionofmessagesat', to: 'changes and reception of messages at'},
     {from: 'when some condition in the implementatio', to: 'when some condition in the implementatio-'},
     {from: 'nbecomestrue,butdonotrespondtoan', to: 'n becomes true, but do not respond to an'}
+  ],
+  31: [
+    {from: 'use this convention because it simplifies th', to: 'use this convention because it simplifies th-'},
+    {from: 'epresentationofmanyalgorithms,but', to: 'e presentation of many algorithms, but'},
+    {from: 'triggered by the external event without an', to: 'triggered by the external event without an-'},
+    {from: 'ycondition;(2)introducealocalvariable', to: 'y condition; (2) introduce a local variable'},
+    {from: 'alocaleventhandlerthatrespondstotheinternaleventdenotingthattheexternal', to: 'a local event handler that responds to the internal event denoting that the external'},
+    {from: 'aserviceatanothercomponent', to: 'a service at another component'},
+    {from: 'aconditiontoanothercomponent.For', to: 'a condition to another component. For'},
+    {from: 'layer and the request confirms that the a', to: 'layer and the request confirms that the a-'},
+    {from: 'aconditiontoanothercomponent.Consideringthebroadcastexamplegiven', to: 'a condition to another component. Considering the broadcast example given'},
+  ],
+  32: [
+    {from: 'sible for broadcasting indicates to the a', to: 'sible for broadcasting indicates to the a-'},
+    {from: 'Atypicalexecutionatagivenlayerconsistsofthefollowingsequenceofactions,', to: 'A typical execution at a given layer consists of the following sequence of actions,'},
+    {from: '.Weconsiderhereabroadcastabstractionthatensuresa', to: 'We consider here a broadcast abstraction that ensures a'},
+    {from: 'certain reliability condition, that is, a prim', to: 'certain reliability condition, that is, a prim-'},
+    {from: 'abroadcastmessageisinitiatedbythereceptionofa', to: 'a broadcast message is initiated by the reception of a'},
+    {from: 'aspecializedindicationeventforthelayerabove.Inthisway,abroadcastimple-', to: 'a specialized indication event for the layer above. In this way, a broadcast imple-'}
   ]
 };
 
