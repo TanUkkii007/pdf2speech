@@ -100,6 +100,13 @@ const replaceOption = {
     {from: 'certain reliability condition, that is, a prim', to: 'certain reliability condition, that is, a prim-'},
     {from: 'abroadcastmessageisinitiatedbythereceptionofa', to: 'a broadcast message is initiated by the reception of a'},
     {from: 'aspecializedindicationeventforthelayerabove.Inthisway,abroadcastimple-', to: 'a specialized indication event for the layer above. In this way, a broadcast imple-'}
+  ],
+  33: [
+    {from: ',wedescribeasimpleabstract', to: ', we describe a simple abstract'},
+    {from: 'ajobtothehandlerabstractionandthejobhan-', to: 'a job to the handler abstraction and the job han-'},
+    {from: ':Requestsajobtobeprocessed.', to: ': Requests a job to be processed.'},
+    {from: ':Confirmsthatthegivenjobhasbeen(orwillbe)', to: ': Confirms that the given job has been(or will be)'},
+    {from: 'Asecondimplementationofthejob-handlerabstractionisgiveninAlgorithm', to: 'A second implementation of the job-handler abstraction is given in Algorithm 1.2.'}
   ]
 };
 
