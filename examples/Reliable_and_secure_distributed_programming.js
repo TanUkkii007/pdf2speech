@@ -107,6 +107,14 @@ const replaceOption = {
     {from: ':Requestsajobtobeprocessed.', to: ': Requests a job to be processed.'},
     {from: ':Confirmsthatthegivenjobhasbeen(orwillbe)', to: ': Confirms that the given job has been(or will be)'},
     {from: 'Asecondimplementationofthejob-handlerabstractionisgiveninAlgorithm', to: 'A second implementation of the job-handler abstraction is given in Algorithm 1.2.'}
+  ],
+  34: [
+    {from: '.Thelayerimplements', to: '. The layer implements'},
+    {from: 'abounded-lengthqueueofjobswaitingtob', to: 'a bounded-length queue of jobs waiting to b-'},
+    {from: 'eprocessed.Thejobsarestoredin', to: 'e processed. The jobs are stored in'},
+    {from: ',whichisinitializedtothe', to: ', which is initialized to the'},
+    {from: '.Twovariables', to: '. Two variables'},
+    {from: '.Tokeepthecodesimple,thesevariablesareunboundedintegersandthey', to: '.To keep the code simple, these variables are unbounded integers and they'}
   ]
 };
 
