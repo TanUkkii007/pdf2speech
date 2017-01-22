@@ -115,6 +115,15 @@ const replaceOption = {
     {from: ',whichisinitializedtothe', to: ', which is initialized to the'},
     {from: '.Twovariables', to: '. Two variables'},
     {from: '.Tokeepthecodesimple,thesevariablesareunboundedintegersandthey', to: '.To keep the code simple, these variables are unbounded integers and they'}
+  ],
+  35: [
+    {from: 'Astackofjob-transformationandjob-handlermodules', to: 'A stack of job-transformation and job-handler modules'},
+    {from: ':Submitsajobfortransformationandforprocessing.', to: ': Submits a job for transformation and for processing.'},
+    {from: ':Confirmsthatthegivenjobhasbeen(orwillbe)', to: ': Confirms that the given job has been (or will be)'},
+    {from: ':Indicatesthatthetransformationofthegivenjob', to: ': Indicates that the transformation of the given job'},
+    {from: 'Asubmittedjobwhosetransformationfailsisnotprocessed.', to: 'A submitted job whose transformation fails is not processed.'},
+    {from: 'before submittin', to: 'before submittin-'},
+    {from: 'gthenextjobuntilthe', to: 'g the next job until the'}
   ]
 };
 
